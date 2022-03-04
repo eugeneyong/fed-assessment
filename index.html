@@ -8,7 +8,193 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="header-text">Hello</h1>
-    <script src="test.js" charset="utf-8"></script>
+    <div class="body-container">
+      <div class="header-container">
+        <div>
+          <h1 class="title-header">
+            Pine<span class="span-title-header">apple</span>
+          </h1>
+        </div>
+        <div>
+          <img
+            class="img-cart-style"
+            src="cart.png"
+            onclick="openModelWindow()"
+          />
+        </div>
+      </div>
+      <hr style="width: 100%" />
+
+      <div class="carousel-style">
+        <input
+          onclick="onCarouselBackButtonClick()"
+          id="back"
+          class="back-button-style"
+          type="button"
+          value="<"
+        />
+        <img
+          id="carousel"
+          class="carousel-img-style"
+          src="banner1.jpg"
+          alt="image"
+        />
+        <input
+          id="forward"
+          onclick="onCarouselForwardButtonClick()"
+          class="forward-button-style"
+          type="button"
+          value=">"
+        />
+      </div>
+
+      <div class="product-container">
+        <div class="product-box-style">
+          <img class="product-img-style" src="pineapple-phone.jpg" />
+          <div class="product-info-container">
+            <div class="product-name">
+              <p id="productName0">item name</p>
+            </div>
+            <div class="price-order">
+              <div class="price-container-style">
+                <p>$</p>
+                <p id="productPrice0" class="item-price-style">item price</p>
+              </div>
+              <div>
+                <input
+                  class="button-style"
+                  type="button"
+                  value="Order"
+                  onclick="onOrderClick('0')"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-box-style">
+          <img class="product-img-style" src="pineapple-phone.jpg" />
+          <div class="product-info-container">
+            <div class="product-name">
+              <p id="productName1">item name</p>
+            </div>
+            <div class="price-order">
+              <div class="price-container-style">
+                <p>$</p>
+                <p id="productPrice1" class="item-price-style">item price</p>
+              </div>
+              <div>
+                <input
+                  class="button-style"
+                  type="button"
+                  value="Order"
+                  onclick="onOrderClick('1')"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-box-style">
+          <img class="product-img-style" src="pineapple-phone.jpg" />
+          <div class="product-info-container">
+            <div class="product-name">
+              <p id="productName2">item name</p>
+            </div>
+            <div class="price-order">
+              <div class="price-container-style">
+                <p>$</p>
+                <p id="productPrice2" class="item-price-style">item price</p>
+              </div>
+              <div>
+                <input
+                  class="button-style"
+                  type="button"
+                  value="Order"
+                  onclick="onOrderClick('2')"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-box-style">
+          <img class="product-img-style" src="pineapple-phone.jpg" />
+          <div class="product-info-container">
+            <div class="product-name">
+              <p id="productName3">item name</p>
+            </div>
+            <div class="price-order">
+              <div class="price-container-style">
+                <p>$</p>
+                <p id="productPrice3" class="item-price-style">item price</p>
+              </div>
+              <div>
+                <input
+                  class="button-style"
+                  type="button"
+                  value="Order"
+                  onclick="onOrderClick('3')"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-box-style">
+          <img class="product-img-style" src="pineapple-phone.jpg" />
+          <div class="product-info-container">
+            <div class="product-name">
+              <p id="productName4">item name</p>
+            </div>
+            <div class="price-order">
+              <div class="price-container-style">
+                <p>$</p>
+                <p id="productPrice4" class="item-price-style">item price</p>
+              </div>
+              <div>
+                <input
+                  class="button-style"
+                  type="button"
+                  value="Order"
+                  onclick="onOrderClick('4')"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-box-style">
+          <img class="product-img-style" src="pineapple-phone.jpg" />
+          <div class="product-info-container">
+            <div class="product-name">
+              <p id="productName5">item name</p>
+            </div>
+            <div class="price-order">
+              <div class="price-container-style">
+                <p>$</p>
+                <p id="productPrice5" class="item-price-style">item price</p>
+              </div>
+              <div>
+                <input
+                  class="button-style"
+                  type="button"
+                  value="Order"
+                  onclick="onOrderClick('5')"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="cart-item-header">
+            <p>Your Cart Items:</p>
+          </div>
+          <span class="close">&times;</span>
+          <div>
+            <ol class="list-style" id="list"></ol>
+          </div>
+        </div>
+      </div>
+      <script src="main.js" charset="utf-8"></script>
+    </div>
   </body>
 </html>
