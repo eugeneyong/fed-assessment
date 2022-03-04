@@ -54,7 +54,7 @@ var cartItems = [];
 var current = 0;
 
 function initialize() {
-  // document.getElementById("carousel").src = carouselItems.banners[1];
+  document.getElementById("carousel").src = carouselItems.banners[1];
 
   for (i = 0; i <= product.product.length; i++) {
     document.getElementById("productName" + i).innerHTML =
